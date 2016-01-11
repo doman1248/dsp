@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I'll be using Sublime Text2 editor. This editor was used by the prior engineering teams I worked with. One of the cool features is multi-line editing. You can place a cursor in each line and edit simultaneously. I use "shift+command+up/down arrow" to highlight multiple lines. One customization I did on the editor was change the spacing from tab to spaces. 
+>> I'll be using Sublime Text2 editor. This editor was used by prior engineering teams I worked with. One of the cool features is multi-line editing. You can place a cursor in each line and edit simultaneously. I use "shift+command+up/down arrow" to highlight multiple lines. One customization I did on the editor was change the spacing from tab to spaces. 
 
 ---
