@@ -31,8 +31,10 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> lambda expressions are small anonymous functions. It's an expression used to create functions. You can think of them as nested functions. You can use these unnamed functions in other functions to perform simple tasks. They are known as one-statement, throw-away functions.
 
 ```python
+## list of 3-tuples
 tups = [(1, 3, -2), (3, 2, 1), (-1, 0, 4), (0, -1, 3), (-2, 6, -5)]
 
+## sorting the list using the second element of each tuple in the list using lambda function
 sorted(tups, key=lambda tup: tup[1])
 ```
 
