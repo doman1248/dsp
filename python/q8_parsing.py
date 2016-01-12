@@ -1,19 +1,26 @@
-#The football.csv file contains the results from the English Premier League. 
+# The football.csv file contains the results from the English Premier League. 
 # The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of 
 # goals scored for and against each team in that season (so Arsenal scored 79 goals 
 # against opponents, and had 36 goals scored against them). Write a program to read the file, 
 # then print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
 
-# The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
+# The below skeleton is optional.  You can use it or you can write the script with an 
+# approach of your choice.
 
 
 import csv
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+file = "/Users/dlee/ds/metis/prework/dsp/python/football.csv"
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+data = csv.reader(open(file,"rb"))
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+header = next(data)
+
+dict = {}
+
+for item in data:
+    dict[abs(int(item[5]) - int(item[6]))] = item[0]
+
+dict[min(dict)]
+
+## Name of team with the smallest difference 'Aston_Villa'

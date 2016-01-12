@@ -15,7 +15,11 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    cnt = 0
+    for i in words:
+        if i[:1] == i[-1:] and len(i) > 1:
+            cnt = cnt + 1
+    return cnt
 
 
 def front_x(words):
@@ -32,7 +36,14 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    xlist = []
+    ylist = []
+    for i in words:
+        if i[:1].lower() == 'x':
+            xlist.append(i)
+        else:
+            ylist.append(i)
+    return sorted(xlist) + sorted(ylist)
 
 
 def sort_last(tuples):
@@ -49,7 +60,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    ordered = sorted(tuples, key=lambda tup: tup[-1])
+    return ordered
 
 
 def remove_adjacent(nums):
@@ -68,9 +80,14 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    a = nums[:1]
+    for i in nums[1:]:
+        if i != a[-1]:
+            a.append(i)
+    return a
 
 
+## I couldn't figure out what linear time meant here.
 def linear_merge(list1, list2):
     """
     Given two lists sorted in increasing order, create and return a
@@ -85,4 +102,8 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    list_final = sorted(list1 + list2)
+    return list_final
+
+
+
