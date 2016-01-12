@@ -12,7 +12,19 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. ``` bash vim /path/<filename> ``` -> editor mode
+> >   * Once in vim -> ```bash :set number ``` -> numbers each line
+> >   * Once in vim -> ```bash :%s/foo/bar/g ``` -> find each occurrence of 'foo' and replace with 'bar'
+> > 2. ```bash wc -l <filename> ``` -> gives number lines in a file
+> > 3. ```bash head <filename> ``` -> see first 10 lines of file
+> >   * ```bash head -n100 <filename> ``` -> see first 100 lines of file
+> > 4. ```bash chmod +x <filename> ``` -> makes file executable
+> > 5. ```bash history ``` -> gives the history of all commands ran in terminal
+> > 6. ```bash grep -i <pattern> <filename> > test.txt ``` -> finds pattern (-i is for case insensitive) in file and saves to test.txt
+> > 7. ```bash mv -i file1 file2 ``` -> rename file from file1 to file2, and if file2 exists prompt confirmation before overwriting
+> > 8. ```bash less <filename> ``` -> viewing large files
+> > 9. ```bash scp /path1/file1 /path2/file1 ``` -> securing transfering file(s) between machines
+> > 10. ```bash rm <filename> ``` -> remove files  
 
 ---
 
