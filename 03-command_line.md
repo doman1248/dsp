@@ -46,9 +46,9 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > 'xargs' is used to build and execute command lines from standard input. 
-> > example: ```find . -name "*.R" | xargs grep library(ggplot2)```
-> > output: It will generate list of .R files where 'library(ggplot2) appears. It will list the same file twice if 'library(ggplot2)' appears multipe times.
+> > * 'xargs' is used to build and execute command lines from standard input. 
+> > * example: ```find . -name "*.R" | xargs grep library(ggplot2)```
+> > * output: It will generate list of .R files where 'library(ggplot2) appears. It will list the same file twice if 'library(ggplot2)' appears multipe times.
 
 ---
 
