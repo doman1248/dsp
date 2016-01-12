@@ -107,6 +107,8 @@ Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 ###Q6. Strings
 Edit the 7 functions in [q6_strings.py](python/q6_strings.py)
 
+>> Updated q6_strings.py
+
 ---
 
 ###Q7. Lists

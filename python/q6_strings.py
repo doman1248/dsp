@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print('Number of donuts: ' + str(count))
+    else:
+        print('Number of donuts: many')
 
 
 def both_ends(s):
@@ -37,7 +40,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    s = str(s)
+    if len(s) < 2:
+        print('')
+    else:
+        print(s[:2] + s[-2:])
 
 
 def fix_start(s):
@@ -56,7 +63,11 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    s = str(s)
+    s1 = s[:1]
+    s2 = s[1:]
+    s3 = s2.replace(s1, "*")
+    print(s1 + s3)
 
 
 def mix_up(a, b):
@@ -74,7 +85,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a = str(a)
+    b = str(b)
+    a1 = b[:2] + a[2:]
+    b1 = a[:2] + b[2:]
+    print(a1 + ' ' + b1)
+
 
 
 def verbing(s):
@@ -91,7 +107,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    s = str(s)
+    if s[-3:] == 'ing':
+        print(s + 'ly')
+    elif len(s) < 3:
+        print(s)
+    else:
+        print(str(s + 'ing')) 
 
 
 def not_bad(s):
@@ -111,7 +133,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    import re
+    s = str(s)
+    pattern = 'not(.*)bad'
+    s1 = re.sub(pattern, r'good', s)
+    print(s1)
 
 
 def front_back(a, b):
@@ -130,4 +156,21 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a = str(a)
+    b = str(b)
+    
+    a_front_len = len(a)/2 + len(a)%2
+    a_back_len = len(a)/2
+    
+    b_front_len = len(b)/2 + len(b)%2
+    b_back_len = len(b)/2
+    
+    print(a[:a_front_len] + b[:b_front_len] + a[-a_back_len:] + b[-b_back_len:])
+
+
+
+
+
+
+
+
