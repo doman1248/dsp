@@ -33,11 +33,11 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > ```ls``` -> list all items in current directory
-> > ```ls -a``` -> list all items including hidden files and directories in current directory
-> > ```ls -l``` -> list all items including file/dir information including file size, read/write/executable status, etc.
-> > ```ls -lh``` -> same as 'ls -l', but formats the file/dir size.
-> > ```ls -la``` -> this combination is pretty meaningful because it gives total list of items as well as additional metadata
+> > * ```ls``` -> list all items in current directory
+> > * ```ls -a``` -> list all items including hidden files and directories in current directory
+> > * ```ls -l``` -> list all items including file/dir information including file size, read/write/executable status, etc.
+> > * ```ls -lh``` -> same as 'ls -l', but formats the file/dir size.
+> > * ```ls -la``` -> this combination is pretty meaningful because it gives total list of items as well as additional metadata
 
 ---
 
