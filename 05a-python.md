@@ -96,7 +96,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> 7850
+>> 7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
