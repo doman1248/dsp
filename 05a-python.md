@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In Python, lists and tuples fairly identical. The big difference is that lists are mutable while tuples are mutable. Tuples are used as keys in dictionaries because they are immutable and they can be hashed by their contents without worries about modications. 
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are similar in terms of creating list of elements/variables/items. You can create a list of different data types in lists and sets. They are different in many ways as well. Lists are sequence type and sortable while sets store unordered, non-duplicate items. Every element is unique in a set. You can also use mathematical set operations on sets, such as intersection (&), union (|), and symmetric difference (^).
 
 ---
 
@@ -28,7 +28,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda expressions are small anonymous functions. It's an expression used to create functions. You can think of them as nested functions. You can use these unnamed functions in other functions to perform simple tasks. They are known as one-statement, throw-away functions.
+
+```python
+tups = [(1, 3, -2), (3, 2, 1), (-1, 0, 4), (0, -1, 3), (-2, 6, -5)]
+
+sorted(tups, key=lambda tup: tup[1])
+```
 
 ---
 
@@ -36,7 +42,28 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions provide concise way to create lists. A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses.
+
+```python
+## examples of list comprehension
+list1 = [y for y in range(10)]
+list2 = [z**2 for z in range(10) if z > 4]
+
+## examples of map function
+map1 = map(lambda x: x, range(10))
+map2 = map(lambda x: x**2, range(10))[5:]
+
+## examples of filter function
+filter1 = filter(lambda x: x >= 0, map1)
+filter2 = map(lambda y: y**2, filter(lambda x: x>4, range(10)))
+
+## example of set comprehension
+set1 = {3*x for x in range(10) if x > 5}
+
+## example of dictionary comprehension
+dic1 = {n: n**2 for n in range(10)}
+
+```
 
 ---
 
