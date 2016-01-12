@@ -114,12 +114,14 @@ Edit the 7 functions in [q6_strings.py](python/q6_strings.py)
 ###Q7. Lists
 Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
+>> Updated q7_lists.py
+
 ---
 
 ###Q8. Parsing
 Edit the 3 functions in [q8_parsing.py](python/q8_parsing.py)
 
-
+>> Updated q8_parsing.py
 
 
 
