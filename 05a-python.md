@@ -34,7 +34,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 ## list of 3-tuples
 tups = [(1, 3, -2), (3, 2, 1), (-1, 0, 4), (0, -1, 3), (-2, 6, -5)]
 
-## sorting the list using the second element of each tuple in the list using lambda function
+## sorting the list using the second element of each tuple by using lambda function
 sorted(tups, key=lambda tup: tup[1])
 ```
 
