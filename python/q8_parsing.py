@@ -7,20 +7,15 @@
 # The below skeleton is optional.  You can use it or you can write the script with an 
 # approach of your choice.
 
-
-import csv
-
 file = "/Users/dlee/ds/metis/prework/dsp/python/football.csv"
 
-data = csv.reader(open(file,"rb"))
-
-header = next(data)
-
-dict = {}
-
-for item in data:
+def get_team(file):
+  import csv
+  data = csv.reader(open(file,"rb"))
+  header = next(data)
+  dict = {}
+  for item in data:
     dict[abs(int(item[5]) - int(item[6]))] = item[0]
-
-dict[min(dict)]
+  return dict[min(dict)]
 
 ## Name of team with the smallest difference 'Aston_Villa'
