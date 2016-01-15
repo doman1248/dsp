@@ -22,7 +22,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >> count of unique degrees = 8
 
 | Degree  | Count |
--------------------
+----------|--------
 | PhD     |  32   |
 | ScD     |  6    | 
 | MPH     |  2    | 
