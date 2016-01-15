@@ -23,14 +23,14 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 | Degree  | Count |
 -------------------
-| 'PhD'   |  32   |
-| 'ScD'   |  6    | 
-| 'MPH'   |  2    | 
-| 'MS'    |  2    |
-| 'MD'    |  1    |
-| 'MA'    |  1    |
-| 'BSEd'  |  1    |
-| 'JD'    |  1    |
+| PhD     |  32   |
+| ScD     |  6    | 
+| MPH     |  2    | 
+| MS      |  2    |
+| MD      |  1    |
+| MA      |  1    |
+| BSEd    |  1    |
+| JD      |  1    |
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
