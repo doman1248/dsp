@@ -51,5 +51,14 @@ results()
 
 ```
 
+Results:
+
+| Metrics | Values |
+----------------------------------
+| mean of firsts:| 7.20109443044 |
+| mean of others:| 7.32585561497 |
+| variance of firsts:| 2.01802730092 |
+| variance of others:| 1.9437810259 |
+| Cohen's d:| -0.0886729270726 |
 
 
