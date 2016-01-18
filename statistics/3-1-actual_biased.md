@@ -38,7 +38,7 @@ thinkplot.Pmfs([pmf, biased_pmf])
 thinkplot.Show(xlabel='Number of Children', ylabel='PMF')
 ```
 
-![](img/3-1-actual_biased.png)
+![](dsp/img/3-1-actual_biased.png)
 
 ####Calculate actual and biased means
 ```python
