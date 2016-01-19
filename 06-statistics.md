@@ -79,21 +79,23 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 * Identical twins make up 0.2% of total world population and 8% of all twins
 
 ####Baye's Rule 
-A = identical twin
-B = fraternal twin
-P(A) = 0.08
-P(B) = 0.92
+* A = identical twin
+* B = fraternal twin
+* P(A) = 0.08
+* P(B) = 0.92
 
-C = twin was male
-P(C|A) = 1
-P(C|B) = 0.5
+* C = twin was male
+* P(C|A) = 1
+* P(C|B) = 0.5
 
 **Solve for P(A|C):**
 
+```
 P(A|C) = P(C|A)P(A) / [P(C|A)P(A) + P(C|B)P(B)]
        = [1 * 0.08] / [(1 * 0.08) + (0.5 * 0.92)]
        = 0.08 / 0.54
        **= 0.148**
+```
 
 ---
 
