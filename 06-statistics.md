@@ -87,13 +87,14 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 * P(C|A) = 1
 * P(C|B) = 0.5
 
-  **Solve for P(A|C):**
+**Solve for P(A|C):**
 ```
 P(A|C) = P(C|A)P(A) / [P(C|A)P(A) + P(C|B)P(B)]
        = [1 * 0.08] / [(1 * 0.08) + (0.5 * 0.92)]
        = 0.08 / 0.54
        = 0.148
 ```
+Probability that Elvis was an identical twin is approximately 15%.
 
 ---
 
